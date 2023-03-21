@@ -1,0 +1,227 @@
+#VRML V2.0 utf8
+
+Background{
+    skyColor [0 0 0, 0.0625 0.03125 0, 0.75 0.375 0]
+    skyAngle [1.44, 1.57]
+    groundColor [0 0 0, 0 0.5 0.2, 0 0.8 0.3]
+    groundAngle [1.31, 1.57]
+} 
+
+Fog {
+	color 0 0 0
+	fogType "EXPONENTIAL"
+	visibilityRange 60
+}
+
+
+Viewpoint {
+    orientation 0 0 1 0
+    position 0 3 30
+}
+
+Transform{
+    translation 0 1 0
+    children[
+        Shape{
+            geometry Cylinder{
+                bottom TRUE
+                height 2
+                radius 0.5
+                side TRUE
+                top TRUE
+            }
+            appearance Appearance{
+                material Material{
+                    diffuseColor 0.6 0.3 0
+                }
+            }
+        }
+    ]
+}
+
+Transform{
+	translation 0 5 0
+	children[
+		Shape{
+			geometry Cone{
+                bottomRadius 3
+                height 6
+                side TRUE
+                bottom TRUE
+			}
+			appearance Appearance{
+				material Material{
+					diffuseColor 0 0.4 0
+				}
+			}
+		}
+	]
+}
+
+Transform{
+	translation 0 8 0
+	children[
+		Shape{
+			geometry Cone{
+                bottomRadius 2
+                height 4
+                side TRUE
+                bottom TRUE
+			}
+			appearance Appearance{
+				material Material{
+					diffuseColor 0 0.5 0
+				}
+			}
+		}
+	]
+}
+
+Transform{
+	translation 0 10 0
+	children[
+		Shape{
+			geometry Cone{
+                bottomRadius 1
+                height 2
+                side TRUE
+                bottom TRUE
+			}
+			appearance Appearance{
+				material Material{
+					diffuseColor 0 0.6 0
+				}
+			}
+		}
+	]
+}
+
+Transform{
+    translation 0 11 0
+    children[
+        Shape{
+            geometry Text{
+            string "Feliz Natal"
+            fontStyle FontStyle{
+                justify "MIDDLE"
+                size 1.0
+                style "BOLD"
+            }
+        }
+            appearance Appearance{
+                material Material{
+					diffuseColor 0.9490 0.9176 0.6118
+				}
+			}
+        }
+    ]
+}
+
+Transform{
+	translation 2.875 1.75 0
+	children[
+		Shape{
+			geometry Sphere{
+		        radius 0.25
+	         }
+			appearance Appearance{
+				material Material{
+					diffuseColor 1 0 0
+				}
+			}
+		}
+	]
+}
+
+Transform{
+	translation 0 5.875 1.875
+	children[
+		Shape{
+			geometry Sphere{
+		        radius 0.25
+	         }
+			appearance Appearance{
+				material Material{
+					diffuseColor 1 1 0
+				}
+			}
+		}
+	]
+}
+
+
+Transform{
+	translation -0.875 8.75 0
+	children[
+		Shape{
+			geometry Sphere{
+		        radius 0.25
+	         }
+			appearance Appearance{
+				material Material{
+					diffuseColor 0 0 1
+				}
+			}
+		}
+	]
+}
+
+
+Transform{
+	translation -2.5 0.75 2.5
+	children[
+		Shape{
+			geometry Box{
+				size 1.5 1.5 1.5
+			}
+			appearance Appearance{
+				material Material{
+					diffuseColor 1 0 1
+				}
+			}
+		}
+	]
+}
+
+Transform{
+	translation -2.750 1.5 2.5
+    rotation 1 0 0 1.57079632679
+	children[
+		Shape{
+			geometry Cylinder {
+                bottom FALSE
+                height 0.625
+                radius 0.3125
+                side TRUE
+                top FALSE
+            }
+			appearance Appearance{
+				material Material{
+					diffuseColor 1 1 0
+				}
+			}
+		}
+	]
+}
+
+
+Transform{
+	translation -2.15 1.5 2.5
+    rotation 1 0 0 1.57079632679
+	children[
+		Shape{
+			geometry Cylinder {
+                bottom FALSE
+                height 0.625
+                radius 0.3125
+                side TRUE
+                top FALSE
+            }
+			appearance Appearance{
+				material Material{
+					diffuseColor 1 1 0
+				}
+			}
+		}
+	]
+}

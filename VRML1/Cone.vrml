@@ -1,0 +1,80 @@
+#VRML V2.0 utf8
+
+Transform{
+	translation 0 2.5 0
+	children[
+		Shape{
+			geometry Cone{
+                bottomRadius 1
+                height 3
+                side TRUE
+                bottom TRUE
+			}
+			appearance Appearance{
+				material Material{
+					diffuseColor 1 0 0
+				}
+			}
+		}
+	]
+}
+
+Transform{
+	translation 2.5 0 0
+    rotation 0 0 1 4.71238898038
+	children[
+		Shape{
+			geometry Cone{
+                bottomRadius 1
+                height 3
+                side TRUE
+                bottom TRUE
+			}
+			appearance Appearance{
+				material Material{
+					diffuseColor 1 1 0
+				}
+			}
+		}
+	]
+}
+
+Transform{
+	translation -2.5 0 0
+    rotation 0 0 1 1.57079632679
+	children[
+		Shape{
+			geometry Cone{
+                bottomRadius 1
+                height 3
+                side TRUE
+                bottom TRUE
+			}
+			appearance Appearance{
+				material Material{
+					diffuseColor 1 0.5 0
+				}
+			}
+		}
+	]
+}
+
+Transform{
+	translation 0 -2.5 0
+    rotation 0 0 1 3.14159265358
+	children[
+		Shape{
+			geometry Cone{
+                bottomRadius 1
+                height 3
+                side TRUE
+                bottom TRUE
+			}
+			appearance Appearance{
+				material Material{
+					diffuseColor 0 0 1
+				}
+			}
+		}
+	]
+}
