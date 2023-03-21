@@ -1,0 +1,80 @@
+#VRML V2.0 utf8
+
+#Pontos de vista
+Viewpoint{
+    orientation -1 1 0 0.785
+    position 3 3 3
+    jump FALSE
+    description "Diagonal de cima"
+
+}
+
+Viewpoint{
+    orientation -1 0 0 1.57
+    position 0 5 0
+    jump FALSE
+    description "Cima"
+}
+
+Viewpoint{
+    orientation 1 0 0 1.57
+    position 0 -3 0
+    jump FALSE
+    description "Baixo"
+}
+
+Viewpoint{
+    orientation 0 1 0 1.57
+    position 3 0 0
+    jump FALSE
+    description "Lateral"
+}
+
+#Mesa - Centro
+Inline{
+    url "Ex_7_8_mesa.vrml"
+}
+
+#Cadeira - Norte
+
+EXTERNPROTO minhaCadeira[
+   field SFColor inputColour
+]
+[
+    "Cadeira.vrml"
+]
+
+
+Transform{
+    translation 0 -0.25 -0.75
+    children minhaCadeira{
+        inputColour 1 0 0
+    }
+}
+
+#Cadeira - Oeste
+Transform{
+    translation -0.75 -0.25 0
+    rotation 0 1 0 1.57
+    children minhaCadeira{
+        inputColour 1 1 0
+    }
+}
+
+#Cadeira - Leste
+Transform{
+    translation 0.75 -0.25 0
+    rotation 0 -1 0 1.57
+    children minhaCadeira{
+        inputColour 0 1 0
+    }
+}
+
+#Cadeira - Sul
+Transform{
+    translation 0.0 -0.25 0.75
+    rotation 0 1 0 3.1415
+    children minhaCadeira{
+        inputColour 0 0 1
+    }
+}

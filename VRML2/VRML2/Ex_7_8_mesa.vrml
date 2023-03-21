@@ -1,0 +1,52 @@
+#VRML V2.0 utf8
+
+Viewpoint{
+    orientation -1 0 0 0.5235
+    position 0 1.75 3
+    jump TRUE
+}
+
+Transform{
+    translation 0 0.525 0
+    children Shape{
+        geometry Box{
+            size 1 0.05 1
+        }
+        appearance Appearance{
+            texture ImageTexture{
+                url "wood.jpg"
+            }
+        }
+    }
+}
+
+Transform{
+    translation -0.45 0 -0.45
+    children DEF perna Shape{
+        geometry Cylinder{
+            height 1
+            radius 0.05
+        }
+        appearance Appearance{
+            texture ImageTexture{
+                url "aluminium.jpg"
+            }
+        }
+    }
+}
+
+
+Transform{
+    translation 0.45 0 -0.45
+    children USE perna
+}
+
+Transform{
+    translation 0.45 0 0.45
+    children USE perna
+}
+
+Transform{
+    translation -0.45 0 0.45
+    children USE perna
+}

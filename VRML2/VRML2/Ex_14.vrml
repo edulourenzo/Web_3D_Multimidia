@@ -1,0 +1,42 @@
+#VRML V2.0 utf8
+
+#Foi usado Bill Board para cultar o lado oposto da faca em relação a normal.
+#Já que o vrml oculta o lado contrario a normal.
+
+Anchor{
+    children[
+        Billboard{
+            axisOfRotation 0 1 0
+            children[
+                Transform{
+                    scale 4.8 3.6 1.0
+                    children[
+                        Shape{
+                            geometry IndexedFaceSet{
+                                coord Coordinate{
+                                    point[
+                                        0.5  0.5 0,
+                                        -0.5  0.5 0,
+                                        -0.5 -0.5 0                                 
+                                        0.5 -0.5 0,
+                                    ]
+                                }
+                                coordIndex[
+                                    0, 1, 2, 3
+                                ]
+                                solid TRUE
+                            }
+                            appearance Appearance{
+                                texture MovieTexture{
+                                    url "welcome.mpeg"
+                                    loop TRUE
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+    url "Ex_13.vrml"
+}

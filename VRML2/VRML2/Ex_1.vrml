@@ -1,0 +1,12 @@
+#VRML V2.0 utf8
+
+Shape{
+	geometry Box{
+		size 0.875 0.875 0.875
+	}
+	appearance Appearance{
+		material Material{
+			diffuseColor 0.125 0.125 0.667
+		}
+	}
+}

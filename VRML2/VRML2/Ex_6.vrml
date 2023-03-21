@@ -1,0 +1,35 @@
+#VRML V2.0 utf8
+
+Viewpoint{
+    position 0 3 20
+    jump TRUE
+}
+
+DEF my_sphere Shape{
+    geometry Sphere{}
+    appearance Appearance{
+        material Material{
+            diffuseColor 0 0.5 0.67
+        }
+    }
+}
+
+Transform{
+    translation 0 2 0
+    children USE my_sphere
+}
+
+Transform{
+    translation 0 4 0
+    children USE my_sphere
+}
+
+Transform{
+    translation 0 6 0
+    children USE my_sphere
+}
+
+Transform{
+    translation 0 8 0
+    children USE my_sphere
+}
